@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* font: Noto Sans KR -> font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+/* font: Roboto -> font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* default */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-family: 'Noto Sans KR', sans-serif; font-size: 10px; }
+body { overflow-x: hidden; color: #fff; background: #191919; transition: background-color 0.3s; }
+ul li { list-style: none; }
+a { display: block; color: #fff; text-decoration: none; }
+img { max-width: 100%; border: 0; }
+button { font-family: 'Noto Sans KR', sans-serif; border: 0; background: none; cursor: pointer; }
+h1, h2 { user-select: none; }
+
+::-webkit-scrollbar { background: #222; }
+::-webkit-scrollbar-thumb { background: #666; }
+
+.overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); }
+
+.cursor { position: fixed; top: 0; left: 0; width: 60px; height: 60px; border-radius: 50%; background: skyblue; opacity: 0.7; transform: translate(-100%, -100%); transition: 0.1s; pointer-events: none; z-index: 999; mix-blend-mode: screen; }
+.cursor-btn { background: red; }
+.cursor-link { background: blue; }
+
+/* loading */
+.loading { display: flex; justify-content: center; align-items: center; position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100vw; height: 100vh; background: #000; z-index: 999; animation: loading 3s linear 1 forwards; }
+.txt-wrap { overflow: hidden; font-family: 'Roboto', sans-serif; font-size: 7rem; font-weight: bold; color: #fff; }
+.txt-wrap span { display: inline-block; padding: 0 1px; transform: translateY(100%); opacity: 1; transition: transform 0.3s, opacity 2.5s; }
+.txt-wrap.active span { transform: translateY(0); opacity: 0; }
+.txt-wrap.active span:nth-of-type(1) { transition-delay: 0.2s; }
+.txt-wrap.active span:nth-of-type(2) { transition-delay: 0.3s; }
+.txt-wrap.active span:nth-of-type(3) { transition-delay: 0.35s; }
+.txt-wrap.active span:nth-of-type(4) { transition-delay: 0.4s; }
+.txt-wrap.active span:nth-of-type(5) { transition-delay: 0.45s; }
+.txt-wrap.active span:nth-of-type(6) { transition-delay: 0.5s; }
+.txt-wrap.active span:nth-of-type(7) { transition-delay: 0.55s; }
+.txt-wrap.active span:nth-of-type(8) { transition-delay: 0.6s; }
+
+/* animation */
+@keyframes loading {
+    0% { opacity: 1; }
+    87.5% { opacity: 1; }
+    100% { opacity: 0; }
+}

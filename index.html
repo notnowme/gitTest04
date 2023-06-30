@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HANJIN DELIVERY</title>
+  <link rel="icon" type="image/png" sizes="192x192"  href="./images/android-icon-192x192.png">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/fontello.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="./script/apikey.js"></script>
+  <script src="./script/jquery-3.7.0.js"></script>
+  <script type="module" src="./script/app.js"></script>
+  <script src="./script/main.js"></script>
+</head>
+<body>
+  <div class="loading">
+    <div class="txt-wrap"><span>H</span><span>A</span><span>N</span><span>&nbsp;</span><span>J</span><span>I</span><span>N</span></div>
+  </div>
+  <!-- header -->
+  <header id="header">
+    <div class="inner">
+      <h1 class="hd-logo"><a href="./index.html">HANJIN DELIVERY</a></h1>
+      <nav id="gnb">
+        <ul>
+          <li><a href="#section-1">Intro</a></li>
+          <li><a href="#section-2">Top Music</a></li>
+          <li><a href="#section-3">Genre</a></li>
+          <li><a href="#section-4">Artist Contents</a></li>
+        </ul>
+        <button type="button" class="theme-btn">
+          <i class="icon-sun-inv"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <!-- main -->
+  <main id="main">
+    <!-- section1 -->
+    <section id="section-1" class="section">
+      <!-- Swiper -->
+      <div class="swiper visual">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video src="videos/v1.mp4" muted loop autoplay class="slide-video"></video>
+            <div class="overlay"></div>
+            <h2 class="slide-tit">당신을 위한 K - IDOL 추천</h2>
+          </div>
+          <div class="swiper-slide">
+            <video src="videos/v2.mp4" muted loop autoplay class="slide-video"></video>
+            <div class="overlay"></div>
+            <h2 class="slide-tit">인기 순위로 만나보는 음원</h2>
+          </div>
+          <div class="swiper-slide">
+            <video src="videos/v3.mp4" muted loop autoplay class="slide-video"></video>
+            <div class="overlay"></div>
+            <h2 class="slide-tit">장르별로 추천되는 음원</h2>
+          </div>
+          <div class="swiper-slide">
+            <video src="videos/v4.mp4" muted loop autoplay class="slide-video"></video>
+            <div class="overlay"></div>
+            <h2 class="slide-tit">아티스트와 연관된 컨텐츠</h2>
+          </div>
+          <div class="swiper-slide">
+            <video src="videos/v5.mp4" muted loop autoplay class="slide-video"></video>
+            <div class="overlay"></div>
+            <h2 class="slide-tit">트렌드와 함께하세요</h2>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- section2 -->
+    <section id="section-2" class="section">
+      <h2 class="tit-sec">Top 50 ></h2>
+      <div class="swiper top-rank">
+        <div class="swiper-wrapper">
+        </div>
+        <div class="swiper2-button-next"></div>
+        <div class="swiper2-button-prev"></div>
+      </div>
+    </section>
+    <!-- section3 -->
+    <section id="section-3" class="section">
+      <h2 class="tit-sec">이런 노래는 어떠세요?</h2>
+      <div class="side-board">
+      <!-- card btn group -->
+      <div class="card-btn-group">
+        <button class="card-btn active">여름</button>
+        <button class="card-btn">무드</button>
+        <button class="card-btn">운동</button>
+        <button class="card-btn">집에서</button>
+        <button class="card-btn">로맨스</button>
+        <button class="card-btn">건강</button>
+        <button class="card-btn">집중</button>
+      </div>
+        <div class="swiper card-slider" dir="rtl">
+          <div class="swiper-wrapper" id="sec3">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section4 -->
+    <section id="section-4" class="section">
+      <h2 class="tit-sec">아티스트 컨텐츠</h2>
+      <div class="side-board">
+        <!-- tab btn group -->
+        <div class="tab-btn-group">
+          <button data-num="0" class="tab-btn active">예능</button>
+          <button data-num="1" class="tab-btn">드라마</button>
+          <button data-num="2" class="tab-btn">영화</button>
+        </div>
+        <!-- tab -->
+        <div class="tab">
+          <ul class="tab-menu active">
+            <li class="art-cont">
+              <a href="https://www.youtube.com/watch?v=Spo6kHEYUN8" target="_blank">
+                <img src="images/e_thum_img1.jpg" alt="">
+                <div class="overlay"><img src="images/art-play-btn.png" alt=""></div>
+              </a>
+            </li>
+            <li class="art-cont">
+              <a href="https://www.youtube.com/watch?v=oK7LiJxmL84" target="_blank">
+                <img src="images/e_thum_img2.jpg" alt="">
+                <div class="overlay"><img src="images/art-play-btn.png" alt=""></div>
+              </a>
+            </li>
+            <li class="art-cont">
+              <a href="https://www.youtube.com/watch?v=sWwHWK7OYJ8" target="_blank">
+                <img src="images/e_thum_img3.jpg" alt="">
+                <div class="overlay"><img src="images/art-play-btn.png" alt=""></div>
+              </a>
+            </li>
+            <li class="art-cont">
+              <a href="https://www.youtube.com/watch?v=LJ8RHdRo7j0" target="_blank">
+                <img src="images/e_thum_img4.jpg" alt="">
+                <div class="overlay"><img src="images/art-play-btn.png" alt=""></div>
+              </a>
+            </li>
+            <li class="art-cont">
+              <a href="https://www.youtube.com/watch?v=ezL9NpGehZY" target="_blank">
+                <img src="images/e_thum_img5.jpg" alt="">
+                <div class="overlay"><img src="images/art-play-btn.png" alt=""></div>
+              </a>
+            </li>
+            <li class="art-cont">
+              <a href="https://www.youtube.com/watch?v=YWTOIxnuYG4" target="_blank">
+                <img src="images/e_thum_img6.jpg" alt="">
+                <div class="overlay"><img src="images/art-play-btn.png" alt=""></div>
+              </a>
+            </li>
+          </ul>
+          <ul class="tab-menu">
+            <li class="art-cont">
+              <img src="images/d_thum_img1.jpg" alt="">
+            </li>
+            <li class="art-cont">
+              <img src="images/d_thum_img2.jpg" alt="">
+            </li>
+            <li class="art-cont">
+              <img src="images/d_thum_img3.jpg" alt="">
+            </li>
+          </ul>
+          <ul class="tab-menu">
+            <li class="art-cont">
+              <img src="images/m_thum_img1.jpg" alt="">
+            </li>
+            <li class="art-cont">
+              <img src="images/m_thum_img2.jpg" alt="">
+            </li>
+            <li class="art-cont">
+              <img src="images/m_thum_img3.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="inner">
+      <p class="copy">&copy; 2023. Co. Hanjin Delivery</p>
+    </div>
+  </footer>
+  <button type="button" class="top-btn"><span>Top</span>Top</button>
+  <div class="cursor"></div>
+  <!-- Initialize Swiper -->
+  <script>
+    const loading = document.querySelector('.loading');
+    const txtWrap = document.querySelector('.txt-wrap');
+
+    loading.addEventListener('animationstart', () => {
+      txtWrap.classList.add('active');
+    });
+
+    loading.addEventListener('wheel', (e) => {
+      e.preventDefault();
+    });
+    
+    loading.addEventListener('animationend', () => {
+      loading.style.display = 'none';
+      
+      var swiper = new Swiper(".visual", {
+        slidesPerView: 1,
+        spaceBetween: 100,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+    });
+  </script>
+</body>
+</html>
